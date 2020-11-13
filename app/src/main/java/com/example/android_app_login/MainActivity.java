@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("email", email);
             intent.putExtra("senha", senha);
 
-            // Destruir a tela de login ao voltar para a página
-            finish();
+            // Destruir a tela de login ao voltar para a página -> BLOQUADO
+            // finish();
 
         }else {
             Toast.makeText(this, "E-mail ou Senha inválidos", Toast.LENGTH_LONG).show();

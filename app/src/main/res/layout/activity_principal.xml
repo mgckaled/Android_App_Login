@@ -6,20 +6,9 @@
   android:layout_height="match_parent"
   tools:context=".PrincipalActivity">
 
-  <TextView
-    android:id="@+id/textView"
-    android:layout_width="258dp"
-    android:layout_height="113dp"
-    android:layout_marginStart="176dp"
-    android:layout_marginTop="291dp"
-    android:layout_marginEnd="177dp"
-    android:layout_marginBottom="292dp"
-    android:text="SEGUNDA TELA"
-    android:textSize="26sp"
-    android:textAlignment="center"
-    android:gravity="center"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+  <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listview"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
