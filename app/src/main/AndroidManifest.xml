@@ -9,7 +9,8 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
-    <activity android:name=".PrincipalActivity"></activity>
+    <activity android:name=".Activity_uIWTextView"></activity>
+    <activity android:name=".PrincipalActivity" />
     <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

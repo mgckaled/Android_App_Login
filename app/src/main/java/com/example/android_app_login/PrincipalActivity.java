@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -14,8 +17,9 @@ public class PrincipalActivity extends AppCompatActivity {
     ListView listView;
     // Data to be displayed into list
     String[] uIWidgets = {
-            "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N",
-            "O", "P", "Q"
+            "TextView", "EditView", "Button", "Checkbox", "RadioButton", "Spinner",
+            "Switch", "ToggleButton", "ImageButton", "RatingBar", "SeekBar", "AlertDialog",
+            "AutocompleteTextView", "ImageSwitcher", "TextSwitcher", "AdapterViewFlipper"
     };
     ArrayAdapter<String> arrayAdapter;
 
@@ -35,7 +39,20 @@ public class PrincipalActivity extends AppCompatActivity {
         // associate with the widgets on layout
         listView = findViewById(R.id.listview);
 
-        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, uIWidgets);
-        listView.setAdapter(arrayAdapter);
+        ListAdapter adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1, uIWidgets);
+
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) {
+                    Intent intent = new Intent(view.getContext(),Activity_uIWTextView.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }
