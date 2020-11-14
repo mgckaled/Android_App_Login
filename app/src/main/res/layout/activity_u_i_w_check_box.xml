@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="20dp"
+  android:layout_margin="10dp"
+  tools:context=".Activity_uIWCheckBox">
+
+  <TextView
+    android:id="@+id/cbtextView"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textSize="24sp"
+    android:text="Selecione uma Linguagem" />
+
+  <CheckBox
+    android:id="@+id/cb_CPlus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="C++"
+    android:textSize="20sp"/>
+
+  <CheckBox
+    android:id="@+id/cb_Java"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="Java" />
+
+  <CheckBox
+    android:id="@+id/cb_JS"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="JavaScript" />
+
+  <CheckBox
+    android:id="@+id/cb_Python"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="Python" />
+
+  <Button
+    android:id="@+id/btnCbEnviar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text="Enviar"
+    android:textSize="20sp" />
+
+</LinearLayout>

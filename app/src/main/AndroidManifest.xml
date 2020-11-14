@@ -9,8 +9,21 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
-    <activity android:name=".Activity_uIWTextView"></activity>
-    <activity android:name=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWCheckBox"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWButton"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWEditText"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWTextView"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".PrincipalActivity"
+      android:parentActivityName=".MainActivity" />
     <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

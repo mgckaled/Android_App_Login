@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Set toolbar title
+        this.setTitle("Meu Primeiro Aplicativo");
+
         editEmail = findViewById(R.id.editEmail);
         editSenha = findViewById(R.id.editSenha);
     }
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("email", email);
             intent.putExtra("senha", senha);
 
-            // Destruir a tela de login ao voltar para a página -> BLOQUADO
+            // Destruir a tela de login ao voltar para a página -> BLOQUEADO
             // finish();
 
         }else {
