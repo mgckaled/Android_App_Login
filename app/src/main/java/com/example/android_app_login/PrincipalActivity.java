@@ -50,20 +50,36 @@ public class PrincipalActivity extends AppCompatActivity {
 
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
             if (i == 0) {
-                Intent intent1 = new Intent(view.getContext(),Activity_uIWTextView.class);
-                startActivity(intent1);
+                Intent intent0 = new Intent(view.getContext(),Activity_uIWTextView.class);
+                startActivity(intent0);
             }
             if (i == 1) {
                 Intent intent1 = new Intent(view.getContext(),Activity_uIWEditText.class);
                 startActivity(intent1);
             }
             if (i == 2) {
-                Intent intent1 = new Intent(view.getContext(),Activity_uIWButton.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(view.getContext(),Activity_uIWButton.class);
+                startActivity(intent2);
             }
             if (i == 3) {
-                Intent intent1 = new Intent(view.getContext(),Activity_uIWCheckBox.class);
-                startActivity(intent1);
+                Intent intent3 = new Intent(view.getContext(),Activity_uIWCheckBox.class);
+                startActivity(intent3);
+            }
+            if (i == 4) {
+                Intent intent4 = new Intent(view.getContext(),Activity_uIWRadioButton.class);
+                startActivity(intent4);
+            }
+            if (i == 5) {
+                Intent intent5 = new Intent(view.getContext(),Activity_uIWSpinner.class);
+                startActivity(intent5);
+            }
+            if (i == 6) {
+                Intent intent6 = new Intent(view.getContext(),Activity_uIWSwitch.class);
+                startActivity(intent6);
+            }
+            if (i == 7) {
+                Intent intent7 = new Intent(view.getContext(),Activity_uIWToggleButton.class);
+                startActivity(intent7);
             }
         });
     }

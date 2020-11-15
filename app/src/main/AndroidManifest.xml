@@ -10,6 +10,18 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
     <activity
+      android:name=".Activity_uIWToggleButton"
+      android:parentActivityName=".PrincipalActivity"/>
+    <activity
+      android:name=".Activity_uIWSwitch"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWSpinner"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
+      android:name=".Activity_uIWRadioButton"
+      android:parentActivityName=".PrincipalActivity" />
+    <activity
       android:name=".Activity_uIWCheckBox"
       android:parentActivityName=".PrincipalActivity" />
     <activity
