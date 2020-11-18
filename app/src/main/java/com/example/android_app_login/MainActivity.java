@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -11,8 +12,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Atritutos da classe
     private EditText editEmail;
     private EditText editSenha;
+
+    private SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +24,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Set toolbar title
-        this.setTitle("Meu Primeiro Aplicativo");
+        this.setTitle("Meu Aplicativo");
 
+        // Referencia dos arquivos .xml
         editEmail = findViewById(R.id.editEmail);
         editSenha = findViewById(R.id.editSenha);
+
+        preferences = getSharedPreferences("login", MODE_PRIVATE);
     }
 
     public void entrar(View view) {
@@ -42,9 +49,12 @@ public class MainActivity extends AppCompatActivity {
             editSenha.setError("Campo senha obrigatório");
             return;
         }
+        // Atribuir os valores do arquivo de Login gerado a variáveis
+        String emailLogin = preferences.getString("email", null);
+        String senhaLogin = preferences.getString("senha", null);
 
         // .equals --> comparar strings / Validar email e senha / && --> Operador lógico AND
-        if(email.equals("admin@email.com") && senha.equals("1234")) {
+        if(email.equals(emailLogin) && senha.equals(senhaLogin)) {
 
             // Se email e senha estiver correto, o botão irá exibir a segunda tela.
             Intent intent = new Intent(this, PrincipalActivity.class);
@@ -76,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == 1 && resultCode == RESULT_OK) {
+            assert data != null;
             String email = data.getStringExtra("email");
             String senha = data.getStringExtra("senha");
 
