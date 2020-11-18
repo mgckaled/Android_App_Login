@@ -10,8 +10,11 @@
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
     <activity
+      android:name=".CadastroActivity"
+      android:parentActivityName=".MainActivity" />
+    <activity
       android:name=".Activity_uIWToggleButton"
-      android:parentActivityName=".PrincipalActivity"/>
+      android:parentActivityName=".PrincipalActivity" />
     <activity
       android:name=".Activity_uIWSwitch"
       android:parentActivityName=".PrincipalActivity" />

@@ -42,11 +42,11 @@ public class PrincipalActivity extends AppCompatActivity {
         // Listview
         ListView listView = findViewById(R.id.listview);
 
-        ListAdapter adapter = new ArrayAdapter<>(this,
+        ListAdapter adapter_lv = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1, uIWidgets);
 
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter_lv);
 
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
             if (i == 0) {

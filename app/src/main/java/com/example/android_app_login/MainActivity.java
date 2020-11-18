@@ -1,5 +1,6 @@
 package com.example.android_app_login;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -62,6 +63,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cadastrar(View view) {
-        Toast.makeText(this, "Tela de Cadastro", Toast.LENGTH_LONG).show();
+        // Toast.makeText(this, "Tela de Cadastro", Toast.LENGTH_LONG).show();
+
+        // Direcionar o Botão Cadastro na Tela de Loguin para a Tela de Cadastro
+        // Ao chamar uma próxima tela é esperado um resultado -> startActivityForResult()
+        Intent intent_cad = new Intent(this, CadastroActivity.class);
+        startActivityForResult(intent_cad, 1);
+    }
+    // Ao fechar a tela de Cadastro o método onActivityResult irá retornar o resultado
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 1 && resultCode == RESULT_OK) {
+            String email = data.getStringExtra("email");
+            String senha = data.getStringExtra("senha");
+
+            // Alterando o texto das View EditText
+            editEmail.setText(email);
+            editSenha.setText(senha);
+
+        }
     }
 }
