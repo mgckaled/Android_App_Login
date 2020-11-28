@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.android_app_login.activities.Main.MainCardViewActivity;
 import com.example.android_app_login.activities.Main.PrincipalActivity;
 import com.example.android_app_login.R;
 
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         if(email.equals(emailLogin) && senha.equals(senhaLogin)) {
 
             // Se email e senha estiver correto, o botão irá exibir a segunda tela.
-            Intent intent = new Intent(this, PrincipalActivity.class);
+            Intent intent = new Intent(this, MainCardViewActivity.class);
             startActivity(intent);
 
             // inserir os dados de acesso na Segunda tela

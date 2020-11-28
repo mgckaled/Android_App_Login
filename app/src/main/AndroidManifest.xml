@@ -9,6 +9,7 @@
     android:roundIcon="@mipmap/ic_my_app_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
+
     <activity android:name=".InitActivity" />
     <activity android:name=".Lista2Activity" />
     <activity android:name=".Lista1Activity" />
@@ -18,16 +19,22 @@
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
+
     </activity>
-    <activity
-      android:name=".activities.Main.uiwidgets.Activity_uIWProgressBar"
-      android:parentActivityName=".activities.Main.PrincipalActivity"/>
-    <activity
-      android:name=".activities.Main.uiwidgets.Activity_uIWRatingBar"
-      android:parentActivityName=".activities.Main.PrincipalActivity" />
+    <activity android:name=".activities.Login.MainActivity" />
     <activity
       android:name=".activities.Login.CadastroActivity"
       android:parentActivityName=".activities.Login.MainActivity" />
+    <activity
+      android:name=".activities.Main.MainCardViewActivity"
+      android:parentActivityName=".activities.Login.MainActivity"/>
+    <activity
+      android:name=".activities.Main.uiwidgets.Activity_uIWProgressBar"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
+    <activity
+      android:name=".activities.Main.uiwidgets.Activity_uIWRatingBar"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
+
     <activity
       android:name=".activities.Main.uiwidgets.Activity_uIWToggleButton"
       android:parentActivityName=".activities.Main.PrincipalActivity" />
@@ -54,8 +61,7 @@
       android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
       android:name=".activities.Main.PrincipalActivity"
-      android:parentActivityName=".activities.Login.MainActivity" />
-    <activity android:name=".activities.Login.MainActivity" />
+      android:parentActivityName=".activities.Main.MainCardViewActivity" />
   </application>
 
 </manifest>
