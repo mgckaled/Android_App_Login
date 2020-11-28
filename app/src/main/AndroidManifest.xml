@@ -9,8 +9,10 @@
     android:roundIcon="@mipmap/ic_my_app_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.Android_App_Login">
-    <activity
-      android:name=".SplashActivity">
+    <activity android:name=".InitActivity" />
+    <activity android:name=".Lista2Activity" />
+    <activity android:name=".Lista1Activity" />
+    <activity android:name=".activities.Login.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
@@ -18,38 +20,42 @@
       </intent-filter>
     </activity>
     <activity
-      android:name=".CadastroActivity"
-      android:parentActivityName=".MainActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWProgressBar"
+      android:parentActivityName=".activities.Main.PrincipalActivity"/>
     <activity
-      android:name=".Activity_uIWToggleButton"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWRatingBar"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWSwitch"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Login.CadastroActivity"
+      android:parentActivityName=".activities.Login.MainActivity" />
     <activity
-      android:name=".Activity_uIWSpinner"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWToggleButton"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWRadioButton"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWSwitch"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWCheckBox"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWSpinner"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWButton"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWRadioButton"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWEditText"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWCheckBox"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".Activity_uIWTextView"
-      android:parentActivityName=".PrincipalActivity" />
+      android:name=".activities.Main.uiwidgets.Activity_uIWButton"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
-      android:name=".PrincipalActivity"
-      android:parentActivityName=".MainActivity" />
-    <activity android:name=".MainActivity">
-
-    </activity>
+      android:name=".activities.Main.uiwidgets.Activity_uIWEditText"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
+    <activity
+      android:name=".activities.Main.uiwidgets.Activity_uIWTextView"
+      android:parentActivityName=".activities.Main.PrincipalActivity" />
+    <activity
+      android:name=".activities.Main.PrincipalActivity"
+      android:parentActivityName=".activities.Login.MainActivity" />
+    <activity android:name=".activities.Login.MainActivity" />
   </application>
 
 </manifest>

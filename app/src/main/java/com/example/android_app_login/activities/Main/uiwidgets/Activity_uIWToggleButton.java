@@ -1,4 +1,4 @@
-package com.example.android_app_login;
+package com.example.android_app_login.activities.Main.uiwidgets;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,8 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.android_app_login.R;
 
 import java.util.Objects;
 

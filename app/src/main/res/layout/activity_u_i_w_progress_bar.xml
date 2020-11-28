@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activities.Main.uiwidgets.Activity_uIWProgressBar">
+
+  <TextView
+    android:id="@+id/text1_pb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="96dp"
+    android:text="Circular ProgressBar"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ProgressBar
+    android:id="@+id/c_progress_bar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    app:layout_constraintEnd_toEndOf="@+id/text1_pb"
+    app:layout_constraintHorizontal_bias="0.496"
+    app:layout_constraintStart_toStartOf="@+id/text1_pb"
+    app:layout_constraintTop_toBottomOf="@+id/text1_pb" />
+
+  <TextView
+    android:id="@+id/text2_hpb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="152dp"
+    android:text="Horizontal Progress Bar"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/c_progress_bar" />
+
+  <ProgressBar
+    android:id="@+id/h_progress_bar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="312dp"
+    android:layout_height="17dp"
+    android:layout_marginTop="20dp"
+    android:indeterminate="false"
+    android:max="100"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text2_hpb" />
+
+  <Button
+    android:id="@+id/btn_horizontal_pb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="Start"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    android:backgroundTint="@color/darkred"
+    app:layout_constraintTop_toBottomOf="@+id/h_progress_bar"
+    android:drawableLeft="@drawable/ic_play_btn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

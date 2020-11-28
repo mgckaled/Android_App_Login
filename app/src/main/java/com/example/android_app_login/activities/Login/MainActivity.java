@@ -1,4 +1,4 @@
-package com.example.android_app_login;
+package com.example.android_app_login.activities.Login;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.android_app_login.activities.Main.PrincipalActivity;
+import com.example.android_app_login.R;
 
 public class MainActivity extends AppCompatActivity {
 

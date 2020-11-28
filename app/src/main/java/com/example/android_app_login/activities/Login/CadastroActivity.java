@@ -1,4 +1,4 @@
-package com.example.android_app_login;
+package com.example.android_app_login.activities.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.android_app_login.R;
+
 import java.util.Objects;
 
 public class CadastroActivity extends AppCompatActivity {
@@ -16,7 +18,6 @@ public class CadastroActivity extends AppCompatActivity {
     private EditText editNomeCadastro;
     private EditText editEmailCadastro;
     private EditText editSenhaCadastro;
-    private Button btnCadastrar;
 
     private SharedPreferences preferences; // atributo para gravação de dados
 
@@ -39,7 +40,7 @@ public class CadastroActivity extends AppCompatActivity {
         editNomeCadastro = findViewById(R.id.cad_editNome);
         editEmailCadastro = findViewById(R.id.cad_editEmail);
         editSenhaCadastro = findViewById(R.id.cad_editSenha);
-        btnCadastrar = findViewById(R.id.cad_button);
+        Button btnCadastrar = findViewById(R.id.cad_button);
 
         // DEFINIR A AÇÃO DO BOTÃO -> classe anônima
         // Enviar os dados digitados para os campos da Tela de Loguin

@@ -5,7 +5,7 @@
   android:layout_height="wrap_content"
   android:orientation="vertical"
   android:layout_marginTop="50dp"
-  tools:context=".Activity_uIWSwitch"
+  tools:context=".activities.Main.uiwidgets.Activity_uIWSwitch"
   tools:ignore="ExtraText">
 
 

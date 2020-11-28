@@ -1,10 +1,13 @@
-package com.example.android_app_login;
+package com.example.android_app_login.activities.Login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
+
+import com.example.android_app_login.R;
+
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -17,6 +20,10 @@ public class SplashActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         // Criar nova Thread para incluir tempo de exibição da SplashView
+        configTimeThreadSplash();
+    }
+
+    private void configTimeThreadSplash() {
         new Thread(() -> {
 
             SystemClock.sleep(4000); // 4 segundos

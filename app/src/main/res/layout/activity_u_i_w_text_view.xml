@@ -4,7 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".Activity_uIWTextView">
+  tools:context=".activities.Main.uiwidgets.Activity_uIWTextView">
 
   <TextView
     android:id="@+id/textView"

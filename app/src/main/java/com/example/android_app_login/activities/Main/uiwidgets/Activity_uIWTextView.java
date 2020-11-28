@@ -1,8 +1,10 @@
-package com.example.android_app_login;
+package com.example.android_app_login.activities.Main.uiwidgets;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.android_app_login.R;
 
 import java.util.Objects;
 
