@@ -12,29 +12,31 @@
 
     <activity android:name=".InitActivity" />
     <activity android:name=".Lista2Activity" />
-    <activity android:name=".Lista1Activity" />
+    <activity android:name=".Lista1Activity" /> <!-- START SPLASH ACTIVITY - INTRODUCTION -->
     <activity android:name=".activities.Login.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-
-    </activity>
+    </activity> <!-- END SPLASH ACTIVITY - INTRODUCTION -->
+    <!-- START LOGIN -->
     <activity android:name=".activities.Login.MainActivity" />
     <activity
       android:name=".activities.Login.CadastroActivity"
-      android:parentActivityName=".activities.Login.MainActivity" />
+      android:parentActivityName=".activities.Login.MainActivity" /> <!-- END LOGIN -->
+    <!-- START MAIN SCREEN -->
     <activity
       android:name=".activities.Main.MainCardViewActivity"
-      android:parentActivityName=".activities.Login.MainActivity"/>
+      android:parentActivityName=".activities.Login.MainActivity" />
+    <!-- END MAIN SCREEN -->
+    <!-- START UI WIDGETS MAIN SCREEN -->
     <activity
       android:name=".activities.Main.uiwidgets.Activity_uIWProgressBar"
       android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
       android:name=".activities.Main.uiwidgets.Activity_uIWRatingBar"
       android:parentActivityName=".activities.Main.PrincipalActivity" />
-
     <activity
       android:name=".activities.Main.uiwidgets.Activity_uIWToggleButton"
       android:parentActivityName=".activities.Main.PrincipalActivity" />
@@ -61,7 +63,17 @@
       android:parentActivityName=".activities.Main.PrincipalActivity" />
     <activity
       android:name=".activities.Main.PrincipalActivity"
-      android:parentActivityName=".activities.Main.MainCardViewActivity" />
+      android:parentActivityName=".activities.Main.MainCardViewActivity" /> <!-- END UI WIDGETS MAIN SCREEN -->
+    <!-- START MENU MAIN SCREEN -->
+    <activity
+      android:name=".activities.Main.Menu.MainMenuActivity"
+      android:label="@string/title_activity_main_menu"
+      android:theme="@style/Theme.Android_App_Login.NoActionBar" />
+
+    <activity
+      android:name=".activities.Main.DateAndTime.DateTimeActivity"
+      android:parentActivityName=".activities.Main.MainCardViewActivity"/>
+
   </application>
 
 </manifest>

@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.android_app_login.R;
+import com.example.android_app_login.activities.Main.DateAndTime.DateTimeActivity;
+import com.example.android_app_login.activities.Main.Menu.MainMenuActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +21,14 @@ public class MainCardViewActivity extends AppCompatActivity implements ItemCardA
             "UI Widgets",
             "Menu",
             "Date and Time",
-            "Toast",
             "Containers",
+            "Multimedia",
+            "Material Design",
+            "Scientific Calculator"
     };
     int[] photoArray = {
+            R.drawable.ic_launcher_background,
+            R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
             R.drawable.ic_launcher_background,
@@ -33,6 +39,8 @@ public class MainCardViewActivity extends AppCompatActivity implements ItemCardA
             "#0074D9",
             "#FF4136",
             "#01FF70",
+            "#000000",
+            "#000000",
             "#000000",
             "#000000"
     };
@@ -74,6 +82,14 @@ public class MainCardViewActivity extends AppCompatActivity implements ItemCardA
     public void onItemClick(int position) {
         if (position == 0) {
             Intent intent = new Intent(getApplicationContext(), PrincipalActivity.class);
+            startActivity(intent);
+        }
+        if (position == 1) {
+            Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
+            startActivity(intent);
+        }
+        if (position == 2) {
+            Intent intent = new Intent(getApplicationContext(), DateTimeActivity.class);
             startActivity(intent);
         }
     }
